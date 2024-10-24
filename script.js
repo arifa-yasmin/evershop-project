@@ -18,7 +18,7 @@ async function testRun(){
     await driver.sleep(3000);
     await driver.findElement(By.xpath("//input[@placeholder='Qty']")).clear();
     await driver.findElement(By.xpath("//input[@placeholder='Qty']")).sendKeys(12);
-    await driver.findElement(By.xpath("//span[normalize-space()='ADD TO CART']")).click();
+    await driver.findElement(By.xpath("//span[normalize-space()='CART']")).click();
     await driver.sleep(3000);
     await driver.findElement(By.xpath("//a[normalize-space()='VIEW CART (1)']")).click();
     await driver.findElement(By.xpath("//div[@class='breadcrumb page-width my-8']")).click();
